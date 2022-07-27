@@ -11,15 +11,19 @@ function App() {
   const myFunction = () => {
     id = id === 0 ? colors.length : id - 1;
     setBg(colors[id]);
-   
   };
-  const valueChange = () =>{
+  const valueChange = () => {
     setName("Hello 👩 ");
-  }
+  };
   return (
     <div className="main" style={{ backgroundColor: bg }}>
       <div>
-        <button onClick={() => myFunction()} onDoubleClick={() => valueChange() }>{name}</button>
+        <button
+          onClick={() => myFunction()}
+          onDoubleClick={() => valueChange()}
+        >
+          {name}
+        </button>
       </div>
     </div>
   );
