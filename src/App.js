@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const colors = ["#8e44af", "#8e90ad", "#8e67ad", "#8e23ad"];
+  const colors = ["#8e44af", "#8e90ad", "#a032a8" , "#8e23ad","#32a852"];
   let id = colors.length;
 
   const [bg, setBg] = useState(colors[0]);
